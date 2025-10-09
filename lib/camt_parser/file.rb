@@ -9,7 +9,7 @@ module CamtParser
       when 
         'urn:iso:std:iso:20022:tech:xsd:camt.053.001.02',
         'urn:iso:std:iso:20022:tech:xsd:camt.053.001.04',
-        'urn:iso:std:iso:20022:tech:xsd:camt.053.001.08'        
+        'urn:iso:std:iso:20022:tech:xsd:camt.053.001.08'
         doc.remove_namespaces!
         return CamtParser::Format053::Base.new(doc.xpath("Document"))
       else
