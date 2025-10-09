@@ -22,6 +22,5 @@ describe CamtParser::File do
       expect(CamtParser::Format053::Base).to receive(:new)
       described_class.parse 'spec/fixtures/valid_namespaces/valid_namespace_053.001.08.xml'
     end
-    
   end
 end
